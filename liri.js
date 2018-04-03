@@ -1,3 +1,4 @@
+
 require('dotenv').config();
 
 var keys = require('./keys.js');
@@ -59,7 +60,7 @@ function getMovie() {
 
   if (!error && response.statusCode === 200) {
 
-    console.log(JSON.parse(body));
+   // console.log(JSON.parse(body));
     console.log('-------------');
     console.log("Title: " + JSON.parse(body).Title);
     console.log('-------------');
